@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Outfit:wght@100;200;400&family=PT+Serif:wght@700&family=Playfair+Display:wght@500&family=Poppins:wght@300;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(215, 51%, 70%);
+  font-family: "Outfit", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  max-width: 21.25rem;
+  height: 37.5rem;
+  border-radius: 0.9375rem;
+  padding: 1.375rem;
+  font-weight: 200;
+  box-shadow: 0 0 35px hsl(216deg 32% 8%);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.6875rem;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  background-color: cyan;
+  border-radius: 0.875rem;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.5;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.card p {
+  padding: 0.625rem;
+  margin-top: 0.1875rem;
+  margin-left: -0.375rem;
+  color: hsl(215, 51%, 70%);
+}
+
+h4 {
+  cursor: pointer;
+  font-weight: 400;
+  padding: 1.0625rem 0 0 0.375rem;
+  color: hsl(0, 0%, 100%);
+}
+h4:hover {
+  font-weight: 400;
+  padding: 1.0625rem 0 0 0.375rem;
+  color: hsl(178, 100%, 50%);
+}
+.info {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.info .ethereum {
+  flex: 1;
+  align-self: center;
+  padding: 0.625rem;
+  margin-top: 0.0625rem;
+  margin-left: -0.25rem;
+  font-weight: 400;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+  margin-top: 0.6875rem;
+}
+
+.avatar {
+  display: flex;
+  padding-top: 1.375rem;
+  align-items: center;
+  gap: 10px;
+  font-weight: 400;
+}
+
+.avatar img {
+  width: 14%;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.avatar item {
+  flex: 1;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: 200;
+}
+a:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.attribution {
+  position: relative;
+  top: 9%;
+  color: hsl(216, 21%, 38%);
+}
+.attribution a {
+  color: hsl(216, 29%, 38%);
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .attribution {
+    display: none;
+  }
+}
