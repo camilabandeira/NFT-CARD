@@ -22,7 +22,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://qr-code-five-blond.vercel.app/)
+- Live Site URL: [Live Site](https://nft-card-sand.vercel.app/)
 
 ## My process
 
